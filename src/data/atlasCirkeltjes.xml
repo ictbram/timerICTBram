@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b7ccfac7d032d9764dfeae2b755482db:8fb1d3215af65539488fd143dc2e00e4:2f0d65b4b2793e9a83ab61e429393d9a$ -->
+<TextureAtlas imagePath="atlasCirkeltjes.png" width="1881" height="1610">
+    <SubTexture name="cirkeltjes0001" x="1" y="1" width="226" height="226" frameX="-139" frameY="-134" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0002" x="229" y="1" width="240" height="239" frameX="-132" frameY="-128" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0003" x="471" y="1" width="253" height="252" frameX="-125" frameY="-121" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0004" x="726" y="1" width="266" height="266" frameX="-119" frameY="-114" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0005" x="994" y="1" width="280" height="280" frameX="-112" frameY="-107" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0006" x="1276" y="1" width="294" height="294" frameX="-105" frameY="-100" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0007" x="1572" y="1" width="308" height="308" frameX="-98" frameY="-93" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0008" x="1" y="242" width="322" height="322" frameX="-91" frameY="-86" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0009" x="325" y="255" width="336" height="336" frameX="-84" frameY="-79" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0010" x="663" y="283" width="350" height="349" frameX="-77" frameY="-73" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0011" x="1015" y="297" width="363" height="362" frameX="-70" frameY="-66" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0012" x="1380" y="311" width="377" height="376" frameX="-63" frameY="-59" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0013" x="1" y="593" width="390" height="390" frameX="-57" frameY="-52" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0014" x="393" y="634" width="404" height="404" frameX="-50" frameY="-45" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0015" x="799" y="661" width="418" height="418" frameX="-43" frameY="-38" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0016" x="1219" y="689" width="432" height="432" frameX="-36" frameY="-31" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0017" x="1" y="1040" width="446" height="446" frameX="-29" frameY="-24" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0018" x="449" y="1081" width="459" height="459" frameX="-22" frameY="-18" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0019" x="910" y="1123" width="473" height="472" frameX="-15" frameY="-11" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="cirkeltjes0020" x="1385" y="1123" width="486" height="486" frameX="-9" frameY="-4" frameWidth="500" frameHeight="500"/>
+</TextureAtlas>

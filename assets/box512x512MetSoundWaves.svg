@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="box512x512MetSoundWaves.svg"
+   inkscape:export-filename="C:\Users\hallo\workspace\timerICTBram\assets\box512x512MetSoundWaves.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="135.86439"
+     inkscape:cy="1095.3783"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="img"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,215)">
+    <image
+       sodipodi:absref="C:\Users\hallo\workspace\timerICTBram\assets\box512x512.png"
+       xlink:href="box512x512.png"
+       width="512"
+       height="512"
+       preserveAspectRatio="none"
+       id="image4493"
+       x="0"
+       y="-165" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="soundwaves">
+    <circle
+       style="display:inline;opacity:0.15;fill:none;stroke:#ffffff;stroke-width:15.7226181;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4512"
+       cx="255.45992"
+       cy="210.62018"
+       r="63.198048" />
+    <ellipse
+       style="display:inline;opacity:0.15;fill:none;stroke:#ffffff;stroke-width:29.36246109;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4512-8"
+       cx="255.10075"
+       cy="212.52393"
+       rx="119.36817"
+       ry="116.69548" />
+    <circle
+       style="display:inline;opacity:0.15;fill:none;stroke:#ffffff;stroke-width:47.26092529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4512-8-6"
+       cx="258.03082"
+       cy="217.44569"
+       r="189.96825" />
+  </g>
+</svg>

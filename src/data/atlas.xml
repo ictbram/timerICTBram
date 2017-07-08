@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8d0c6d6fd50e089682f5a53e396081f5:81eee01dcfd1e2889ffb8af0dc596045:cde709370900f12288f3449eded86f07$ -->
+<TextureAtlas imagePath="atlas.png" width="2003" height="1153">
+    <SubTexture name="box0001" x="1639" y="654" rotated="true" width="356" height="244" frameX="-128" frameY="-68" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0002" x="1125" y="794" width="246" height="358" frameX="-127" frameY="-67" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0003" x="1621" y="900" rotated="true" width="365" height="250" frameX="-125" frameY="-64" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0004" x="1125" y="418" width="256" height="374" frameX="-122" frameY="-60" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0005" x="593" y="434" width="266" height="388" frameX="-117" frameY="-54" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0006" x="1451" y="1" width="274" height="401" frameX="-113" frameY="-48" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0007" x="885" y="1" width="284" height="415" frameX="-108" frameY="-42" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0008" x="299" y="862" rotated="true" width="424" height="290" frameX="-105" frameY="-38" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0009" x="1" y="436" width="296" height="431" frameX="-102" frameY="-35" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0010" x="1" y="1" width="296" height="433" frameX="-102" frameY="-34" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0011" x="299" y="1" width="296" height="431" frameX="-102" frameY="-35" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0012" x="299" y="434" width="292" height="426" frameX="-104" frameY="-37" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0013" x="597" y="1" width="286" height="418" frameX="-107" frameY="-41" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0014" x="1171" y="1" width="278" height="407" frameX="-111" frameY="-45" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0015" x="1727" y="1" width="270" height="394" frameX="-115" frameY="-51" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0016" x="861" y="421" width="262" height="382" frameX="-119" frameY="-56" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0017" x="1383" y="410" width="254" height="371" frameX="-123" frameY="-61" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0018" x="1639" y="404" rotated="true" width="363" height="248" frameX="-126" frameY="-65" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0019" x="1373" y="794" width="246" height="358" frameX="-127" frameY="-67" frameWidth="500" frameHeight="500"/>
+    <SubTexture name="box0020" x="725" y="824" rotated="true" width="356" height="244" frameX="-128" frameY="-68" frameWidth="500" frameHeight="500"/>
+</TextureAtlas>
