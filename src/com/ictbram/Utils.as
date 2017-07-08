@@ -1,4 +1,3 @@
-package com.ictbram {
 	/**
 	 * Timer ICTBram
 	 * Copyright (C) 2017 Bram Joris - ictbram.com 
@@ -16,6 +15,9 @@ package com.ictbram {
 	 * You should have received a copy of the GNU General Public License
 	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	 */
+	 
+package com.ictbram {
+
 	public class Utils {
 		
 		public static function calculateMaximumZoom() : Number {

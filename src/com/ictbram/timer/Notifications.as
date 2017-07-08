@@ -1,8 +1,3 @@
-package com.ictbram.timer {
-	import com.demonsters.debugger.MonsterDebugger;
-	import com.juankpro.ane.localnotif.Notification;
-	import com.juankpro.ane.localnotif.NotificationEvent;
-	import com.juankpro.ane.localnotif.NotificationManager;
 	/**
 	 * Timer ICTBram
 	 * Copyright (C) 2017 Bram Joris - ictbram.com 
@@ -20,6 +15,13 @@ package com.ictbram.timer {
 	 * You should have received a copy of the GNU General Public License
 	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	 */
+	 
+package com.ictbram.timer {
+	import com.demonsters.debugger.MonsterDebugger;
+	import com.juankpro.ane.localnotif.Notification;
+	import com.juankpro.ane.localnotif.NotificationEvent;
+	import com.juankpro.ane.localnotif.NotificationManager;
+
 	public class Notifications {
 		private var notificationManager:NotificationManager;
 		private static const NOTIFICATION_CODE:String = "NOTIFICATION_CODE_001";

@@ -1,4 +1,3 @@
-package com.ictbram.timer.entity {
 	/**
 	 * Timer ICTBram
 	 * Copyright (C) 2017 Bram Joris - ictbram.com 
@@ -17,6 +16,8 @@ package com.ictbram.timer.entity {
 	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	 */
 	 
+package com.ictbram.timer.entity {
+ 
 	public class Sound {
 		
 		[Embed(source = "../../../../data/sound/selection.mp3")] public static var Beep:Class;

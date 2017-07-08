@@ -1,16 +1,3 @@
-package com.ictbram.timer.screen {
-	import feathers.controls.LayoutGroup;
-	import feathers.controls.ScrollText;
-	import feathers.layout.HorizontalAlign;
-	import feathers.layout.HorizontalLayout;
-	import feathers.layout.VerticalAlign;
-	import feathers.layout.VerticalLayout;
-
-	import starling.display.Sprite;
-	import starling.events.Event;
-
-	import com.ictbram.timer.ViewConstants;
-
 	/**
 	 * Timer ICTBram
 	 * Copyright (C) 2017 Bram Joris - ictbram.com 
@@ -29,6 +16,19 @@ package com.ictbram.timer.screen {
 	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	 */
 	 
+package com.ictbram.timer.screen {
+	import feathers.controls.LayoutGroup;
+	import feathers.controls.ScrollText;
+	import feathers.layout.HorizontalAlign;
+	import feathers.layout.HorizontalLayout;
+	import feathers.layout.VerticalAlign;
+	import feathers.layout.VerticalLayout;
+
+	import starling.display.Sprite;
+	import starling.events.Event;
+
+	import com.ictbram.timer.ViewConstants;
+
 	public class InfoScreen extends Sprite {
 		private var lblContainer:LayoutGroup;
 		

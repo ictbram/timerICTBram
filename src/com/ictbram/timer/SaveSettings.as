@@ -1,6 +1,3 @@
-package com.ictbram.timer {
-	import com.demonsters.debugger.MonsterDebugger;
-	import com.levelxgames.flixelx.data.FlxSaveWrapper;
 	/**
 	 * Timer ICTBram
 	 * Copyright (C) 2017 Bram Joris - ictbram.com 
@@ -18,6 +15,11 @@ package com.ictbram.timer {
 	 * You should have received a copy of the GNU General Public License
 	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	 */
+	 
+package com.ictbram.timer {
+	import com.demonsters.debugger.MonsterDebugger;
+	import com.levelxgames.flixelx.data.FlxSaveWrapper;
+
 	 
 	public class SaveSettings {
 		private const SAVE_NAME:String = "com.ictbram.timer";

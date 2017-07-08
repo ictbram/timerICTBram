@@ -1,9 +1,3 @@
-package com.ictbram.timer {
-	import feathers.controls.ScrollText;
-
-	import starling.display.Stage;
-
-	import flash.display.Stage;
 	/**
 	 * Timer ICTBram
 	 * Copyright (C) 2017 Bram Joris - ictbram.com 
@@ -21,6 +15,14 @@ package com.ictbram.timer {
 	 * You should have received a copy of the GNU General Public License
 	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	 */
+	 
+package com.ictbram.timer {
+	import feathers.controls.ScrollText;
+
+	import starling.display.Stage;
+
+	import flash.display.Stage;
+
 	public class ViewConstants {
 		
 		public static const VERSION:String ="1.0.4"; //versionNumber in app.xml
