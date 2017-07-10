@@ -1,20 +1,20 @@
-	/**
-	 * Timer ICTBram
-	 * Copyright (C) 2017 Bram Joris - ictbram.com 
-	 * 
-	 * This program is free software: you can redistribute it and/or modify
-	 * it under the terms of the GNU General Public License as published by
-	 * the Free Software Foundation, either version 3 of the License, or
-	 * (at your option) any later version.
+/**
+ * Timer ICTBram
+ * Copyright (C) 2017 Bram Joris - ictbram.com 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
 
-	 * This program is distributed in the hope that it will be useful,
-	 * but WITHOUT ANY WARRANTY; without even the implied warranty of
-	 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	 * GNU General Public License for more details.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
 
-	 * You should have received a copy of the GNU General Public License
-	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
-	 */
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 	 
 package {
 	import starling.core.Starling;
@@ -51,7 +51,6 @@ package {
 			}		
 			this.addEventListener(Event.ADDED_TO_STAGE, addedToStage);
 			//Multitouch.inputMode = MultitouchInputMode.GESTURE;
-			
 		}
 		
 		private function addedToStage(event : Event) : void {
@@ -75,8 +74,6 @@ package {
 				NativeApplication.nativeApplication.systemIdleMode = SystemIdleMode.KEEP_AWAKE;
 			}
 			
-			
-			
 			//ViewConstants.saveSettings.scale =  getDefaultZoom();
 			//ViewConstants.saveSettings.vibrate = ViewConstants.TRUE;
 			//ViewConstants.saveSettings.sound = ViewConstants.TRUE;
@@ -94,7 +91,6 @@ package {
 		}
 
 		private function delayedInit() : void {
-			//hier loaderimg  weggepakt, eventueel hier terugzetten bij problemen
 			starlingStartWithResize();
 			stage.addEventListener(Event.RESIZE, onStageResize);
 		}
@@ -113,11 +109,9 @@ package {
 				
 			starling.viewPort = viewPort;
 			
-			
 			if(ViewConstants.STARLINGMAIN){
 				ViewConstants.STARLINGMAIN.resize();
 			}
-
 		}
 		
 		private function starlingStartWithResize():void{
@@ -158,7 +152,5 @@ package {
 			
 			return scale;
 		}
-		
-		
 	}
 }

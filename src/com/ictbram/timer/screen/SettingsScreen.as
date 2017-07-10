@@ -1,20 +1,20 @@
-	/**
-	 * Timer ICTBram
-	 * Copyright (C) 2017 Bram Joris - ictbram.com 
-	 * 
-	 * This program is free software: you can redistribute it and/or modify
-	 * it under the terms of the GNU General Public License as published by
-	 * the Free Software Foundation, either version 3 of the License, or
-	 * (at your option) any later version.
+/**
+ * Timer ICTBram
+ * Copyright (C) 2017 Bram Joris - ictbram.com 
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
 
-	 * This program is distributed in the hope that it will be useful,
-	 * but WITHOUT ANY WARRANTY; without even the implied warranty of
-	 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	 * GNU General Public License for more details.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
 
-	 * You should have received a copy of the GNU General Public License
-	 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
-	 */
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 	 
 package com.ictbram.timer.screen {
 	import feathers.controls.Button;
@@ -101,11 +101,7 @@ package com.ictbram.timer.screen {
 			lblZoomValue.paddingTop = 5;
 			lblZoomValue.text = "" + ViewConstants.saveSettings.scale ;
 
-			//waarden worden naargelang ingesteld, 100 is dubbel zo groot
-			sliderZoom.minimum = 1;
-			
-			//resizen nog sliderZoom.width = sliderZoom.width /2;
-			
+			sliderZoom.minimum = 1;			
 			sliderZoom.maximum = Utils.calculateMaximumZoom();
 			
 			sliderZoom.value = ViewConstants.saveSettings.scale;
@@ -121,7 +117,6 @@ package com.ictbram.timer.screen {
 			resizeBtnContainer.width = ViewConstants.STARLING_STAGE.stageWidth;
 			verticalContainer.addChild(resizeBtnContainer);
 			
-			//TODO mss nog showen en verbergen naargelang value veranderd is
 			resizeBtn = new Button();
 			resizeBtn.label = "apply";
 			resizeBtn.visible = false;
@@ -231,7 +226,6 @@ package com.ictbram.timer.screen {
 				}
 			}
 			
-
     		MonsterDebugger.trace( "toggle.isSelected has changed:", check.isSelected );
 
 			saveValues();
