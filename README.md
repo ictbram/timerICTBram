@@ -1,6 +1,7 @@
 # Timer ICTBram
 
 A timer application made by Bram Joris, 2017, all code written by Bram Joris is licensed as GNU GPLv3<br />
+The app is published in the Google play store for free (https://play.google.com/store/apps/details?id=air.com.ictbram.timerICTBram&hl=en)
 The files in the assets and src/data directories are also licensed as GNU GPLv3<br />
 They are created with Adobe Flash, Blender, Gimp, Texturepacker<br />
 The beep sound is something from Micro Star Fighter game (http://ictbram.com/starfighter), created with as3sfxr (http://superflashbros.net/as3sfxr/)
