@@ -83,6 +83,7 @@ package com.ictbram.timer.screen {
 		private var durationTimer:DurationTimer;
 		
 		private var running:Boolean = false;
+		private var alarming:Boolean = false;
 		
 		private var soundIntervalID:int;
 		private var vibrateIntervalID:int;
@@ -200,7 +201,6 @@ package com.ictbram.timer.screen {
 			
 			btnContainer.addChild(minSpinnerlist);
 			
-			//TODO : er nog tussen of iet
 			var labelDubbelpunt:Label = new Label();
 			labelDubbelpunt.text = ":";
 			btnContainer.addChild(labelDubbelpunt);
@@ -299,9 +299,7 @@ package com.ictbram.timer.screen {
 			}else{
 				resumeCountDown(ViewConstants.saveSettings.startTime, ViewConstants.saveSettings.lastTotalSeconds);
 			}
-			
-			//ViewConstants.STAGE.addEventListener(TransformGestureEvent.GESTURE_SWIPE, onSwipe);
-			
+				
 			txtDebug = new ScrollText();
 			
 			lblContainer.addChild(txtDebug);
@@ -317,21 +315,15 @@ package com.ictbram.timer.screen {
 				MonsterDebugger.trace(this, "error init notification: "+error.toString());	
 				ViewConstants.txtDebug.text += "error init notification: "+error.toString(); 
 			}
-			//tmp 
 		}
 		
-		private function setAniPos():void{
-			var factor : Number = ViewConstants.STARLING_STAGE.width / boxAni.width;
-			boxAni.width = ViewConstants.STARLING_STAGE.width;
+		private function setAniPos():void{		
+			var factor : Number = stage.stageWidth / boxAni.width;
+			boxAni.width = stage.stageWidth;
 			boxAni.height *= factor;
 			
-			cirkeltjesAni.width = ViewConstants.STARLING_STAGE.width;
+			cirkeltjesAni.width = stage.stageWidth;
 			cirkeltjesAni.height *= factor;
-			
-		
-			//boxAni.x = ViewConstants.STARLING_STAGE.width / 2;
-			//boxAni.y = (ViewConstants.STARLING_STAGE.height) / 2;
-			//cirkeltjesAni.y = boxAni.y;
 		}
 		
 		private function resumeCountDown(fromTime:Number, seconds:int) : void {
@@ -339,12 +331,12 @@ package com.ictbram.timer.screen {
 			var toTime:Number = fromTime + seconds*1000;
 			MonsterDebugger.trace("resumeCountDown", "currentTime:"+currentTime + " toTime:"+toTime);
 			if(toTime > currentTime) {
-				//countdown door laten gaan
+				//continue countdown
 				var toSeconds:int = Math.round((toTime - currentTime)/1000);
 				setSpinners(toSeconds);
 				start_triggered();
 			}else{
-				//niet meer binnen de minuut, niet starten
+				//no longer in timer, don't start
 				ViewConstants.saveSettings.startTime = 0;
 			}
 		}
@@ -355,7 +347,6 @@ package com.ictbram.timer.screen {
 
 		private function touchBox(e : TouchEvent) : void {
 			var touch:Touch = e.getTouch(stage);
-			//mss nog nen if ertussen ala if(e.currentTarget is C_card){
 			var localPos:Point = touch.getLocation(boxAni);
 			if(touch.phase == TouchPhase.BEGAN)
 			{
@@ -372,7 +363,37 @@ package com.ictbram.timer.screen {
 		}
 		
 		public function resize() : void {
+			removeChild(boxAni);
+			removeChild(cirkeltjesAni);
+			
+			boxAni.stop();
+			cirkeltjesAni.stop();
+			Starling.juggler.remove(boxAni);
+			Starling.juggler.remove(cirkeltjesAni);
+			
+			cirkeltjesAni.removeEventListener(TouchEvent.TOUCH, touchBox);
+			
+			boxAni = new MovieClip(ViewConstants.STARLINGMAIN.assets.getTextures("box"), 30);
+			cirkeltjesAni  = new MovieClip(ViewConstants.STARLINGMAIN.assets.getTextures("cirkeltjes"), 30);
+			
+			cirkeltjesAni.addEventListener(TouchEvent.TOUCH, touchBox);
+			
 			setAniPos();
+			
+			addChild(boxAni);
+			addChild(cirkeltjesAni);
+			
+			Starling.juggler.add(boxAni);
+			Starling.juggler.add(cirkeltjesAni);
+			
+			if(!alarming){
+				boxAni.stop();
+				cirkeltjesAni.stop();
+				
+				boxAni.visible = false;
+				cirkeltjesAni.visible = false;
+			}
+						
 			lblContainer.width = ViewConstants.STARLING_STAGE.stageWidth;
 			
 			btnContainer.width = ViewConstants.STARLING_STAGE.stageWidth;
@@ -409,8 +430,7 @@ package com.ictbram.timer.screen {
 				if(overwriteLastTotalSeconds){
 					ViewConstants.saveSettings.lastTotalSeconds = totalSeconds;
 				}
-				
-				
+
 				//MonsterDebugger.trace(this, "minutes:"+lMinutes + "seconds:"+lSeconds);
 				if(totalSeconds>0){
 					ViewConstants.saveSettings.startTime = new Date().time;
@@ -486,6 +506,7 @@ package com.ictbram.timer.screen {
 		}
 
 		private function completeHandler(event : TimerEvent = null) : void {
+			alarming = true;
 			resetBtn.visible = true;
 			ViewConstants.STARLINGMAIN.switchToApp();
 			stopTimer();
@@ -506,6 +527,7 @@ package com.ictbram.timer.screen {
 		}
 		
 		private function stopAlarm():void{
+			alarming = false;
 			clearInterval(soundIntervalID);
 			clearInterval(vibrateIntervalID);
 		}
@@ -526,7 +548,7 @@ package com.ictbram.timer.screen {
 		}
 		
 		private function turnOnScreen():void{
-			//vind ik niet direct hoe te doen
+			//can't find how to do this quick enough
 			//alarm.startAlarm();			
 		}
 		

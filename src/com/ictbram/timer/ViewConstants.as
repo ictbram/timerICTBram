@@ -25,7 +25,7 @@ package com.ictbram.timer {
 
 	public class ViewConstants {
 		
-		public static const VERSION:String ="1.0.4"; //versionNumber in app.xml
+		public static const VERSION:String ="1.0.5"; //versionNumber in app.xml
 		public static const DEBUG:Boolean = false;
 		
 		public static var STAGE:flash.display.Stage;
